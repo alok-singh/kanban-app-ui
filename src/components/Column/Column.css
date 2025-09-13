@@ -1,0 +1,11 @@
+.column {
+  background: #1e1f29;
+  border-radius: 8px;
+  padding: 1rem;
+  min-width: 250px;
+  flex: 1;
+}
+
+.column h3 {
+  margin-top: 0;
+}

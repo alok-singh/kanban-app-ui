@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1e1f29;
+}
+
+.header h1 {
+  font-size: 1.2rem;
+}
+
+.header .add-task {
+  display: flex;
+  align-items: center;
+  background: #635fc7;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 12px 24px 12px 12px;
+  border-radius: 50px;
+}
+
+.header .add-task img {
+  width: 24px;
+  margin-right: 4px;
+}

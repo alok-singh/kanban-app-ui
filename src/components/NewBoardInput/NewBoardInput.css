@@ -1,0 +1,80 @@
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1e1f29;
+  padding: 16px 0px;
+  border-radius: 8px;
+  color: white;
+}
+
+.task-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.task-group label {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.task-group input,
+.task-group textarea,
+.task-group select {
+  background: #252836;
+  border: 1px solid #333;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+}
+
+.task-group input:focus,
+.task-group textarea:focus,
+.task-group select:focus {
+  border-color: #635fc7;
+}
+
+textarea {
+  resize: none;
+}
+
+.task-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.save-btn {
+  background: #635fc7;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #524bb7;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #444;
+  color: #bbb;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  border-color: #888;
+  color: white;
+}
+
+.task-input .error-message {
+  font-size: 12px;
+  color: red;
+}

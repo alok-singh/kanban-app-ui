@@ -1,0 +1,93 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 17, 20, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1e1f29;
+  color: white;
+  width: 60vw;
+  max-width: 90%;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #bbb;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+.modal-body {
+  margin-top: 1rem;
+}
+
+.modal-description {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.modal-status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal-status label {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.modal-status select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #252836;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-status select:focus {
+  border-color: #635fc7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
